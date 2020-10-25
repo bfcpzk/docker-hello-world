@@ -1,3 +1,3 @@
-FROM scratch
-ADD hello /
-CMD ["/hello"]
+FROM centos
+ENV name world
+CMD echo "hello $name"
